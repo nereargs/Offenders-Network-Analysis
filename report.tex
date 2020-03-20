@@ -1,0 +1,135 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+\include{defs}
+
+\usepackage{lipsum}
+
+%%%%%%%%%%%%%%%
+% Title Page
+\title{Offenders’ Network Analysis}
+\author{Nerea Ruiz de Gauna de Santiago \newline / TAP / \href{mailto:nerea@tap.work}{nerea@tap.work} }
+\date{\today}
+%%%%%%%%%%%%%%%
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+\clearpage
+
+\newpage
+
+\section{First section}
+\lipsum[1]
+
+\fullboxbegin
+\lipsum[1]
+\fullboxend
+
+\lipsum[1]
+
+\subsection{First subsection}
+\lipsum[1]
+
+\leftboxbegin
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augue eu neque. 
+\leftboxend
+
+\lipsum[1-2]
+
+\subsubsection{First subsubsection}
+
+\lipsum[1]
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.5\textwidth]{Giantcomponent.png}
+\caption{The sky is the limit.}
+\label{fig:giantcomponent}
+\end{figure}
+
+\section*{Unnumbered section}
+\lipsum[1]
+
+\input{table_reg.tex}
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.8\textwidth]{Reg_highfragment.png}
+\caption{The sky is the limit.}
+\label{fig:reg_highfragment}
+\end{figure}
+
+\section{Second section}
+
+\lipsum[1]
+
+Table \ref{tab:sample_table} is a sample table for illustrative purposes. 
+
+\begin{table}[!h]
+\centering
+\caption{Sample table.}
+\begin{tabular}{cccc}
+\toprule
+Value 1 & Value 2 & Value 3 & Value 4\\
+\midrule
+ odd     & odd   & odd & 1.00 \\
+ even    & even  & even& 1.00 \\
+ odd     & odd   & odd & 1.00 \\
+ even    & even  & even& 1.00 \\
+\bottomrule
+\end{tabular}
+\label{tab:sample_table}
+\end{table}
+
+\lipsum[1]
+
+\frameboxbegin{Sample frame}
+\lipsum[1]
+\frameboxend
+
+\newpage
+
+\section{Features commands}
+
+\subsection{Pictures used}
+
+\noindent
+Cover picture filename (in titlepage): \texttt{cover}\\
+Logo filename (in foot): \texttt{logo}\\
+Figure \ref{fig:giantcomponent} (in body): \texttt{giantcomponent} \\
+Figure \ref{fig:reg_highfragment} (in body): \texttt{reg\_highfragment}
+
+
+\subsection{Boxes}
+
+\begin{verbatim}
+\fullboxbegin
+Content
+\fullboxend
+\end{verbatim}
+
+\begin{verbatim}
+\leftboxbegin
+Content
+\leftboxend
+\end{verbatim}
+
+\begin{verbatim}
+\rightboxbegin
+Content
+\rightboxend
+\end{verbatim}
+
+\begin{verbatim}
+\frameboxbegin{Frame Title}
+Content
+\frameboxend
+\end{verbatim}
+
+
+\end{document}          

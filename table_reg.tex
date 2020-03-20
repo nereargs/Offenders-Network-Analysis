@@ -1,0 +1,33 @@
+\begin{table}[h]
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{center}
+\caption{The \textit{Two-Independent-Signals} Treatment.\label{table2}}
+\vskip 2mm
+\setlength\extrarowheight{-5pt}
+\begin{tabular}{p{3.5cm} p{4cm}<{\centering}}
+\toprule
+ & \multicolumn{1}{c}{Posterior Log Odds} \\
+\midrule
+$\delta$ (Prior Log Odds)&        0.81\sym{***}\\
+                         &      (0.05)         \\
+\addlinespace
+$\beta_{1, T}$           &        0.66\sym{***}\\
+                         &      (0.12)         \\
+\addlinespace
+$\beta_{1, B}$           &        0.81\sym{***}\\
+                         &      (0.11)         \\
+\addlinespace
+$\beta_{2, T}$ (Independent)&        0.60\sym{**} \\
+                         &      (0.26)         \\
+\addlinespace
+$\beta_{2, T}$ (Independent)&        0.39         \\
+                         &      (0.26)         \\
+\midrule
+$P(\beta_{2, T} = \beta_{2, B})$&        0.56         \\
+Observations             &         123         \\
+\(R^{2}\)                &       0.846         \\
+\bottomrule
+\end{tabular}
+\end{center}
+\footnotesize{Notes: *, **, and *** indicate statistical significance at the 0.10, 0.05, and 0.01 levels, respectively. Robust standard errors are in the parentheses.}
+\end{table}
